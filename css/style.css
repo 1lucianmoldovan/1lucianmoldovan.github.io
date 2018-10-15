@@ -22,9 +22,10 @@ body {
 }
 #top-menu-bar a {
   padding: 5px 15px 10px 15px;
-  color: #ffffff;
+  margin: 2px 0 2px 0;
   text-decoration: none;
   display: inline-block;
+  color: hsl(61, 100%, 50%);
 }
 #top-menu-bar a:visited {
   color: #ffffff;
