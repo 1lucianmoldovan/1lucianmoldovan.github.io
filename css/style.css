@@ -1,6 +1,28 @@
 body {
   background-color: #f5f5f5;
 }
+
+.test {
+  border: 2px solid #000;
+  margin: 2px;
+  padding: 2px;
+}
+#content-wrap {
+  border-color: blue;
+}
+#left-sidebar {
+  width: 30%;
+  float: left;
+  border-color: red;
+  margin: 10px;
+}
+#content {
+  border-color: green;
+  padding-left: 33%;
+}
+#content div #my-picture {
+  border-radius: 50%;
+}
 .page-block {
   background-color: white;
   padding: 24px;
