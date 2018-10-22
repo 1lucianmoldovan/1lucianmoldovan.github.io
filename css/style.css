@@ -2,30 +2,30 @@ body {
   background-color: #f5f5f5;
 }
 
-.test {
+/* .test {
   border: 2px solid #000;
   margin: 2px;
-  padding: 2px;
+  padding: 2px; */
 }
 #content-wrap {
-  border-color: blue;
+  /* border: 1px solid blue; */
 }
 #left-sidebar {
   width: 30%;
   float: left;
-  border-color: red;
-  margin: 10px;
+  /* border: 1px solid red; */
+  margin: 0px;
 }
 #content {
-  border-color: green;
-  padding-left: 33%;
+  /* border: 1px solid green; */
+  padding-left: 30%;
 }
 #content div #my-picture {
   border-radius: 50%;
 }
 .page-block {
   background-color: white;
-  padding: 24px;
+  padding: 8px;
   margin: 10px;
   border: 1px solid #991919;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
@@ -45,7 +45,7 @@ body {
   display: inline;
 }
 #top-menu-bar a {
-  padding: 5px 15px 10px 15px;
+  padding: 5px 10px 10px 15px;
   margin: 2px 0 2px 0;
   text-decoration: none;
   display: inline-block;
