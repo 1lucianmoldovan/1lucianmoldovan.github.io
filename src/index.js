@@ -10,6 +10,10 @@ function show(id) {
 
 }
 
+function hideElement(el) {
+  el.style.display = 'none';
+}
+
 //$("home-menu").onclick = showHomePage;
 //$("skills-menu").onclick = showSkillsPage;
 //$("education-menu").onclick = showEducationPage;
@@ -17,9 +21,8 @@ function show(id) {
 
 function hideAllPages() {
   var pages = document.querySelectorAll(".page-block");
-  pages.forEach(function(page){
-    page.style.display = 'none';
-  });
+  pages.forEach(hideElement);
+
 }
 
 var links = document.querySelectorAll("#top-menu-bar a");
