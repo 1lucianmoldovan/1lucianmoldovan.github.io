@@ -17,9 +17,9 @@ function show(id) {
 
 function hideAllPages() {
   var pages = document.querySelectorAll(".page-block");
-  for (var i = 0; i < pages.length; i++) {
-    pages[i].style.display = 'none';
-  }
+  pages.forEach(function(page){
+    page.style.display = 'none';
+  });
 }
 
 var links = document.querySelectorAll("#top-menu-bar a");
