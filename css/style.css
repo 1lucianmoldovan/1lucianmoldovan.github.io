@@ -24,6 +24,7 @@ body {
   border-radius: 50%;
 }
 .page-block {
+  display: none;
   background-color: white;
   padding: 8px;
   margin: 10px;
