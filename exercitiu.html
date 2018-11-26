@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JavaScript program for calculations </title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+        <input type="button" onClick="totalBy()" Value="Total" />
+        <input type="button" onClick="SubtractBy()" Value="Subtract" />
+    </form>
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+    <script>
+
+        function multiplyBy() {
+            var firstNumber = document.getElementById('firstNumber').value;
+            var secondNumber = document.getElementById('secondNumber').value;
+
+
+            if (firstNumber && secondNumber) {
+                console.log(firstNumber, secondNumber);
+                document.getElementById('result').innerHTML = firstNumber * secondNumber;
+            }
+        }
+
+        function divideBy() {
+            var firstNumber = document.getElementById('firstNumber').value;
+            var secondNumber = document.getElementById('secondNumber').value;
+
+            if (firstNumber && secondNumber) {
+                console.log(firstNumber, secondNumber);
+                document.getElementById('result').innerHTML = firstNumber / secondNumber;
+            }
+        }
+
+        function totalBy() {
+            var firstNumber = document.getElementById('firstNumber').value;
+            var secondNumber = document.getElementById('secondNumber').value;
+            var total = Number(firstNumber) + Number(secondNumber)
+
+            if (firstNumber && secondNumber) {
+                console.log(firstNumber, secondNumber);
+                document.getElementById('result').innerHTML = total;
+            }
+        }
+
+        function SubtractBy() {
+            var firstNumber = document.getElementById('firstNumber').value;
+            var secondNumber = document.getElementById('secondNumber').value;
+            var Subtract = Number(firstNumber) - Number(secondNumber)
+
+            if (firstNumber && secondNumber) {
+                console.log(firstNumber, secondNumber);
+                document.getElementById('result').innerHTML = Subtract;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
