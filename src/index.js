@@ -37,16 +37,30 @@ function initMenu() {
 }
 
 function initSkillsPage() {
-  var skills = ['Microsoft Office Tools', 'HTML', 'JS', 'Oracle ERP'];
+  var skills = [
+    ['Microsoft Office Tools',7, "Andrei"], 
+    ['HTML',6, "Cristian"], 
+    ['JS',2, "Matei"], 
+    ['Oracle ERP',1, ""]
+  ];
   var resultList = document.querySelector('#skills-page ul');
 
-var skillsLi = skills.map(function(skill) {
-  return `<li>${skill.toUpperCase()}</li>`;
+var listItems = skills.map(function(skill) {
+  console.log('map skill', skill);
+  var EndorsedBy = ' - Endorsed by'
+  if (skill[2] == "") {
+    EndorsedBy = "";
+  }
+  var name = skill[0].toUpperCase();
+  return `<li>${name}  
+  <span style="color: gray">- ${skill[1]} ${EndorsedBy}</span> 
+  ${skill[2]}
+  </li>`;
 });
 
 
-  console.log('resultList:', skillsLi)
-  resultList.innerHTML = skillsLi.join('');
+  console.log('resultList:', listItems)
+  resultList.innerHTML = listItems.join('');
 }
 
 initMenu();
