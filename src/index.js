@@ -4,8 +4,7 @@ function initMenu() {
     links[i].onclick = function () {
       $('.page-block').hide()
       var page = this.getAttribute('data-page');
-      show(page + "-page");
-      $('#' + page + "-page").show();
+      $('#' + page + "-page").fadeIn();
     };
   }
 }
@@ -34,6 +33,6 @@ var listItems = skills.map(function(skill) {
 }
 
 initMenu();
-$('#skills-page').show();
+$('#skills-page').fadeIn();
 initSkillsPage();
 
